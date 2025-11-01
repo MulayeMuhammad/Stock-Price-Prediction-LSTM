@@ -73,37 +73,7 @@ Trainable params: 31,901
 
 ---
 
-## 📁 Project Structure
 
-```
-Projet2_Stock_price/
-│
-├── notebook/
-│   ├── stock_prediction_comparison.ipynb  # RNN vs LSTM comparison
-│   ├── model_training.ipynb               # LSTM training notebook
-│   └── data_exploration.ipynb             # EDA and visualization
-│
-├── app/
-│   ├── app.py                             # Streamlit application (main)
-│   └── requirements.txt                   # Dependencies
-│
-├── models/
-│   ├── model.keras                        # Trained LSTM model
-│   ├── rnn_model.h5                       # RNN model (for comparison)
-│   └── scaler.pkl                         # MinMaxScaler for normalization
-│
-├── presentation/
-│   └── stock_prediction_presentation.pdf  # Project presentation
-│
-├── predictions/
-│   └── predictions_IBM.csv                # Example predictions export
-│
-├── README.md                              # This file
-├── requirements.txt                       # Python dependencies
-└── .gitignore
-```
-
----
 
 ## 🛠️ Technical Stack
 
@@ -252,20 +222,6 @@ The app will open in your browser at `http://localhost:8501`
    - Key metrics (current price, predicted change)
 5. **Export Data**: Download predictions as CSV
 
-### Example Usage
-
-```python
-# In Streamlit sidebar:
-Stock Symbol: IBM
-Start Date: 2023-01-01
-End Date: Today
-Days to Predict: 7
-
-# Results:
-✅ Current Price: $156.32
-✅ Predicted Price (Day 7): $158.45
-✅ Expected Change: +$2.13 (+1.36%)
-```
 
 ---
 
@@ -465,46 +421,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🔧 Troubleshooting
-
-### Common Issues
-
-**Issue**: `Module 'yfinance' not found`
-```bash
-pip install yfinance --upgrade
-```
-
-**Issue**: `TensorFlow not loading model`
-```bash
-pip install tensorflow==2.13.0  # Use specific version
-```
-
-**Issue**: `Streamlit not opening`
-```bash
-# Check port availability
-streamlit run app.py --server.port 8502
-```
-
----
-
-## 📊 Project Status
-
-- [x] Data collection and preprocessing
-- [x] RNN model development
-- [x] LSTM model development
-- [x] Model comparison and evaluation
-- [x] Streamlit application development
-- [x] Real-time prediction implementation
-- [x] CSV export functionality
-- [x] Documentation
-- [ ] Mobile app deployment
-- [ ] API development
-
----
-
-<p align="center">
-  <i>⭐ If you find this project useful, please consider giving it a star!</i>
-</p>
 
 <p align="center">
   <strong>Predicting the future of finance with Deep Learning 📈</strong>
